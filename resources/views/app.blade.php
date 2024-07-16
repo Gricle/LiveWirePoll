@@ -25,10 +25,20 @@
   @livewireStyles
 </head>
 
-<body class="container mx-auto mt-10 mb-10 max-w-lg"  style="background-color: #faafe3;">
+<body class="container mx-auto mt-10 mb-10 max-w-lg"  style="background-color: #f3d6ea;">
   @livewireScripts
 
-  @livewire('create-poll')
+  <div>
+    <h2>Create Poll</h2>
+    @livewire('create-poll')
+  </div>
+
+  <div>
+    <h2>Available Polls</h2>
+    
+    @livewire('polls')
+  </div>
+
 </body>
 
 </html>
